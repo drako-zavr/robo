@@ -9,9 +9,14 @@
 
     </form>
     <q-form>
-        <q-input outlined v-model="name" label="Имя"></q-input>
-        <q-input outlined v-model="phone" label="Телефон"></q-input>
-        <q-input outlined v-model="email" label="E-mail"></q-input>
+        <q-input outlined v-model="name" label="Имя" :rules="[(val) => !!val || 'Обязательное поле']"></q-input>
+        <q-input outlined v-model="phone" label="Телефон" :rules="[(val) => !!val || 'Обязательное поле']"></q-input>
+        <q-input 
+        outlined 
+        v-model="email" 
+        label="E-mail" 
+        :rules="[(val) => !!val || 'Обязательное поле']"
+        ></q-input>
         <q-btn
           flat 
           type="submit"
