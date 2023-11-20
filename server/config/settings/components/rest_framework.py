@@ -32,6 +32,8 @@ REST_FRAMEWORK = {
 }
 
 CORS_ALLOW_CREDENTIALS = True
+# huh
+CORS_ORIGIN_ALLOW_ALL = True
 
 if env("DEBUG"):
     CORS_ALLOWED_ORIGINS = ("https://localhost:8080",)

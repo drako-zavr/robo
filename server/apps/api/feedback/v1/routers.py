@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import FeedbackRetriveAPIView
+from .views import  FeedbackCreateAPIView
 
 app_name = "feedback"
 
@@ -11,8 +11,9 @@ app_name = "feedback"
 
 
 urlpatterns = [
-    path(
-        "list/<int:type_level_id>/",
-        FeedbackRetriveAPIView.as_view(),
-    ),
+    # path(
+    #     "list/<int:type_level_id>/",
+    #     FeedbackRetriveAPIView.as_view(),
+    # ),
+    path("create/", FeedbackCreateAPIView.as_view()),
 ]
