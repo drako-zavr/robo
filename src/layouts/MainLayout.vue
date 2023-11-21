@@ -1,15 +1,12 @@
 <template>
     <q-layout view="lHh Lpr lFf">
-        <q-header elevated>
-            <q-toolbar>
-                <q-toolbar-title> RSUE </q-toolbar-title>
-            </q-toolbar>
-        </q-header>
-
+        <AppNavbar/>
         <q-page-container>
             <router-view />
         </q-page-container>
     </q-layout>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+  import AppNavbar from './AppNavBar.vue';
+</script>
