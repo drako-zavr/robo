@@ -1,4 +1,6 @@
 <template>
+    <SectionBlock
+    bgClass="bg-secondary">
     <div class="main-header">
         <div class="main-header__title">
             <p>ROBO SCHOOL</p>
@@ -9,5 +11,8 @@
         <a href="#" class="main-header__button">Записаться на курс</a>
 
     </div>
+</SectionBlock>
 </template>
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import SectionBlock from './SectionBlock.vue';
+</script>

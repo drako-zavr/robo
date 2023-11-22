@@ -1,60 +1,36 @@
 <template>
-
-
-    <q-form @submit.prevent="onSubmit" ref="feedbackForm" >
-        <q-input outlined v-model="name" label="Имя" :rules="[(val) => !!val || 'Обязательное поле']"></q-input>
-        <q-input outlined v-model="phone" label="Телефон" :rules="[(val) => !!val || 'Обязательное поле']"></q-input>
-        <q-input 
-        outlined 
-        v-model="email" 
-        label="E-mail" 
-        :rules="[(val) => !!val || 'Обязательное поле', isValidEmail()]"
-        ></q-input>
-        <q-btn
-          flat 
-          type="submit"
-          size="md"
-          label="Оформить заявку"
-        />
-
-    </q-form>
-</template>
-
-<script setup lang="ts">
-import { ref } from 'vue';
-import { api } from 'boot/axios';
-import { QForm } from 'quasar';
-
-
-
-const name = ref(''),
-email = ref(''),
-phone = ref('');
-const feedbackForm = ref<QForm>();//?
-
-const isValidEmail = () => {
-    const emailPattern =
-      /^(?=[a-zA-Z0-9@._%+-]{6,254}$)[a-zA-Z0-9._%+-]{1,64}@(?:[a-zA-Z0-9-]{1,63}\.){1,8}[a-zA-Z]{2,63}$/;
-    return (val: string) => emailPattern.test(val) || 'Неверный формат Email';
-  };
-
-const onSubmit = () => {
-  void feedbackForm.value?.validate().then(async (success: boolean) => {
-    if (success) {
-      console.log('success')
+    <SectionBlock
+    bgClass="bg-accent"
+    >
+        <div class="q-container ">
+      <div class="row">
+        <div class="col-6 q-pb-md text-white">
+          <p class="feedback__title">Запишитесь на курс со скидкой 10%</p>
+          <p class="feedback__text"> Акция действительна до 10 марта 2022 года</p>
+        </div>
+        <div class= 'col-6' >
+          <FeedbackForm />
+        </div>
+        
+        
+      </div>
       
-      await api
-        .post('/feedback/create/', {
-          name: name.value,
-          email: email.value,
-          phone: phone.value
-        })
-        .catch((e) => {
-          console.error(e);
-          
-        });
-    }
-  });
-};
+    </div>
+    <div class="row w-100">
+            <img class="col"
+    height="120 percent"
+    src="~images/percent.svg"
+  />
+  <img class="col percent"
+    height="120"
+    src="~images/percent.svg"
+  />
+  
+        </div>
+    </SectionBlock>
 
+</template>
+<script setup lang="ts">
+import FeedbackForm from './FeedbackForm.vue';
+import SectionBlock from './SectionBlock.vue';
 </script>

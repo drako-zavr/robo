@@ -7,7 +7,7 @@ from .models import Feedback
 
 @admin.register(Feedback)
 class FeedbackAdmin(BaseAdminMixin, admin.ModelAdmin):
-    list_display = ("name",)
+    list_display = ("name","email","phone")
 
 # @admin.register(Feedback)
 # class FeedbackAdmin(admin.ModelAdmin):
