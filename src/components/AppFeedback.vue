@@ -17,8 +17,8 @@
       
     </div>
     <div class="row w-100">
-            <img class="col"
-    height="120 percent"
+            <img class="col percent"
+    height="120"
     src="~images/percent.svg"
   />
   <img class="col percent"

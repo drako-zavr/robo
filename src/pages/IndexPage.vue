@@ -4,7 +4,7 @@
     <!-- <AppExample/> -->
     <AppTeam/>
     <AppFeedback/>
-    <AppFooter/>
+    
   </q-page>
 </template>
 
@@ -13,5 +13,5 @@
 import AppFeedback from 'src/components/AppFeedback.vue';
 import AppHeader from 'src/components/AppHeader.vue';
 import AppTeam from 'src/components/AppTeam.vue';
-import AppFooter from 'src/components/AppFooter.vue';
+
 </script>
