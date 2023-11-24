@@ -9,7 +9,7 @@ from .serializers import FeedbackSerializer
 
 # class FeedbackRetriveAPIView(generics.ListAPIView):
 #     """
-#     Получение рекомендаций//
+#     Получение отзыва//
 #     """
 
 #     serializer_class = FeedbackSerializer

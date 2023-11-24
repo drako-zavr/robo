@@ -8,7 +8,7 @@ from ..models import Feedback
 
 class FeedbackSerializer(serializers.ModelSerializer):
     """
-    Сериализатор рекомендации
+    Сериализатор заявок
     """
 
     class Meta:
