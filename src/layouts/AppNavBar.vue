@@ -1,13 +1,13 @@
 <template>
 
-<q-header class="main-navbar bg-secondary">
+<q-header class="navbar bg-secondary">
             <q-toolbar class="q-container bg-transparent q-pa-md">
-                <q-toolbar-title> ROBO.SCHOOL </q-toolbar-title>
-                <a href=""> О школе </a>
-                <a href=""> Тренеры </a>
-                <a href=""> Стоимость </a>
+                <q-toolbar-title class="navbar__title"> ROBO.SCHOOL </q-toolbar-title>
+                <a class="navbar__link" href=""> О школе </a>
+                <a class="navbar__link" href=""> Тренеры </a>
+                <a class="navbar__link" href=""> Стоимость </a>
                 <!-- <q-btn>О школе</q-btn> -->
-                <q-toolbar-title > +7 800 000 11 22 </q-toolbar-title>
+                <q-toolbar-title class="navbar__phone"> +7 800 000 11 22 </q-toolbar-title>
             </q-toolbar>
         </q-header>
 
