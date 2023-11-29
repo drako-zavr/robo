@@ -6,5 +6,5 @@ app_name = "team"
 urlpatterns = [
     # path("", TeamView.as_view(), name="index"),
     
-    path("team/", TeacherRetriveAPIView.as_view(), name="teachers"),
+    path("list/", TeacherRetriveAPIView.as_view(), name="teachers"),
 ]

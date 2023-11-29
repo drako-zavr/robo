@@ -29,6 +29,8 @@ PROJECT_APPS = [
     "apps.api.auth",
     # 
     "apps.api.feedback",
+    "apps.api.team",
+
 ]
 
 DEVELOPER_APPS = [

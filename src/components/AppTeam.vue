@@ -5,7 +5,7 @@
         <div class="row">
     <TeamCard/>
     <TeamCard/>
-    <TeamCard/></div>
+    <TeamCard/></div> 
     <img src="../assets/images/arrow_left.svg">
     <img src="../assets/images/arrow_right.svg">
 </div>

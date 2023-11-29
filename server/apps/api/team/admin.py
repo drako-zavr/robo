@@ -6,4 +6,5 @@ from .models import Teacher
 
 @admin.register(Teacher)
 class TeacherAdmin(BaseAdminMixin, admin.ModelAdmin):
-    list_display = ("name")
+    """Админка тренеров"""
+    list_display = ("order","name")
