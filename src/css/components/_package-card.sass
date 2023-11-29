@@ -1,35 +1,60 @@
 .package-card
-    padding: 0
-    margin: 20px
+    color: #141024
+    margin-right: 20px
+    // margin-right: auto
+    // margin-left: auto
+    margin-bottom: 120px
+    padding: 0px
     box-shadow: none
-    line-height: 160%
     border-radius: 20px
     border: 1px solid rgba(20, 16, 36, 0.20)
-
+    min-width: 360px
+    &__content
+        padding: 0px
     &__title
-        color: #141024
+        line-height: 160%
         font-size: 30px
         font-style: normal
         font-weight: 600
         text-align: center
         margin-bottom: 83px
+        margin-top: 40px
     &__price
-        color: #141024
+        line-height: 160%
         font-size: 50px
         font-style: normal
         font-weight: 600
         text-align: center
         margin-bottom: 20px
     &__details
-        color: #141024
+        line-height: 160%
         font-size: 18px
         font-style: normal
         font-weight: 400
         text-align: center
-        margin-bottom: 52px
+        margin: 0px auto 52px auto
+        width: 250px
     &__btn
+        line-height: 160%
         color: #fff
         text-align: center
         font-size: 18px
         font-style: normal
         font-weight: 400
+        //????
+        margin: 0px 40px 40px 50px
+        background: $accent
+        display: inline-flex
+        padding: 25px 54px
+        justify-content: center
+        align-items: center
+        border-radius: 5px
+        // min-width: 280px
+   
+
+.package-card-active
+    background-color: $secondary
+    color: #fff !important
+// .package-wrap
+//     margin-right: auto
+//     margin-left: auto
