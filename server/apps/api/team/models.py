@@ -7,7 +7,7 @@ class Teacher(models.Model):
     Модель преподавателя
     """
 
-    order = models.CharField(_("Порядок"), max_length=31, null=True, blank=False)
+    order = models.PositiveIntegerField(_("Порядок вывода"), null=True, blank=True)
     name = models.CharField(_("Имя"), max_length=255, null=True, blank=False)
     photo = models.ImageField(blank=True, null=True, verbose_name=_("Фотография"))
     position = models.CharField(_("Должность"), max_length=255, null=True, blank=False)
