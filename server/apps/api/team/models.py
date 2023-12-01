@@ -14,6 +14,7 @@ class Teacher(models.Model):
     social1 = models.CharField(_("Ссылка1"), max_length=255, null=True, blank=False)
     social2 = models.CharField(_("Ссылка2"), max_length=255, null=True, blank=False)
     info = models.CharField(_("Информация"), max_length=255, null=True, blank=False)
+    display = models.BooleanField(_("Отображение"), null=True, blank=True)
 
     def __str__(self):
         return self.name
@@ -21,7 +22,7 @@ class Teacher(models.Model):
     class Meta:
         verbose_name = _("Преподаватель")
         verbose_name_plural = _("Преподаватели")
-        ordering = ["name"]
+        ordering = ["order"]
  
 
     

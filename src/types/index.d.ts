@@ -7,5 +7,6 @@ export interface Teacher {
     social1: string;
     social2: string;
     info: string;
+    display: boolean;
 
   }
