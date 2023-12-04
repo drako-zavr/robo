@@ -1,33 +1,32 @@
 <template>
   <SectionBlock title="Профессиональные тренеры">
-   
-      <q-scroll-area
-       style="height: 700px; max-width: 100%;"
-       
-       >
+
+    <q-scroll-area ref="scrollAreaRef" 
+    style="height: 700px; max-width: 100%;" bar-style=null>
+
       <div class="row no-wrap">
         <div class="col" style="width: 380px;"></div>
-
-        <div v-for="teammate in teammatesList" :key="teammate.id" >
+        <div v-for="teammate in teammatesList" :key="teammate.id">
           <TeamCard v-if="teammate.display" :teammate="teammate" class="col" />
         </div>
         <div class="col" style="width: 380px;"></div>
       </div>
-      </q-scroll-area>
-      <img src="../assets/images/arrow_left.svg">
-      <img src="../assets/images/arrow_right.svg">
- 
-    <!-- <q-btn class="arrow-btn"></q-btn> -->
+
+    </q-scroll-area>
+    <div class="btns row">
+      <q-img class="arrow-btn" src="../assets/images/arrow_left.svg"  @click="scrollLeft"></q-img>
+      <q-img class="arrow-btn" src="../assets/images/arrow_right.svg" @click="scrollRight"></q-img>
+    </div>
+
   </SectionBlock>
 </template>
 <script setup lang="ts">
 import TeamCard from './TeamCard.vue';
 import SectionBlock from './SectionBlock.vue';
-// import { useTeam } from '../hooks';
 import { onMounted, ref } from 'vue';
 import { Teacher } from '../types/index';
 import { api } from 'boot/axios';
-// import { LocationQuery } from 'vue-router';
+
 
 function useTeam() {
   const fetchTeam = async () => {
@@ -43,53 +42,29 @@ function useTeam() {
     fetchTeam
   };
 }
-// function useTeam() {
-//   const fetchTeamList = (query: LocationQuery): Promise<Teacher[]> => {
-//     return new Promise((resolve, reject) => {
-//       api
-//         .get<Teacher[]>('team/list/', { params: query })
-//         .then((response) => {
-//           resolve(response.data);
-//         })
-//         .catch((error) => {
-//           console.error(error);
-//           reject(error);
-//         });
-//     });
-//   };
-// //   const fetchArticleDetails = (
-// //     articleId: number | string
-// //   ): Promise<Teacher> => {
-// //     return new Promise((resolve, reject) => {
-// //       api
-// //         .get<Teacher>(`article/details/${articleId}`)
-// //         .then((response) => {
-// //           resolve(response.data);
-// //         })
-// //         .catch((error) => {
-// //           console.error(error);
-// //           reject(error);
-// //         });
-// //     });
-// //   };
-
-//   return {
-//     fetchTeam
-//     // fetchArticleDetails
-//   };
-// }
-
 
 const { fetchTeam } = useTeam();
-
 const teammatesList = ref<Teacher[]>([]);
 const isLoading = ref<boolean>(true);
 
 onMounted(async () => {
   teammatesList.value = await fetchTeam();
   isLoading.value = false;
+
 });
 
+// scroll team
+const position = ref(300)
+const scrollAreaRef = ref(null)
 
+const scrollLeft = () =>  {
+  position.value = 0
+  scrollAreaRef.value.setScrollPosition('horizontal', position.value, 300)
+}
+
+const scrollRight = () => {
+  position.value += 500
+  scrollAreaRef.value.setScrollPosition('horizontal', position.value,300)
+}
 
 </script>
