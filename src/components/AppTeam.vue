@@ -2,7 +2,10 @@
   <SectionBlock title="Профессиональные тренеры">
 
     <q-scroll-area ref="scrollAreaRef" 
-    style="height: 700px; max-width: 100%;" bar-style=null>
+    style=" max-width: 100%;" bar-style=null
+    :height="`${$q.screen.lt.sm ? '500' : '700'}px`"
+    :style="`${$q.screen.lt.sm ? 'height: 500' : 'height: 700'}px`"
+    >
 
       <div class="row no-wrap">
         <div class="col" style="width: 380px;"></div>

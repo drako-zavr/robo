@@ -3,7 +3,7 @@
   
     <div class="section-block__content w-100" >
       <div class="q-container">
-        <p class="section-block__title">
+        <p class="section-block__title  text-h4" :class="$q.screen.gt.sm ? '' : 'text-center'">
           
           {{ title }}
         </p>
