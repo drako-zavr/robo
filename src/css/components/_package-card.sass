@@ -8,7 +8,7 @@
     box-shadow: none
     border-radius: 20px
     border: 1px solid rgba(20, 16, 36, 0.20)
-    min-width: 360px
+    // min-width: 360px
     &__content
         padding: 0px
     &__title
@@ -41,7 +41,6 @@
         font-size: 18px
         font-style: normal
         font-weight: 400
-        //????
         margin: 0px 40px 40px 50px
         background: $accent
         display: inline-flex
@@ -58,3 +57,17 @@
 // .package-wrap
 //     margin-right: auto
 //     margin-left: auto
+
+    
+@media (max-width: 540px)
+    .package-card
+        max-width: 300px
+        margin-left: auto
+        margin-right: auto 
+        &__content
+            max-width: 300px
+        &__details
+            font-size: 16px
+        &__btn
+            font-size: 16px
+            margin: 0px 20px 20px 20px

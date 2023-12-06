@@ -1,6 +1,7 @@
 <template>
-    <q-form @submit.prevent="onSubmit" ref="feedbackForm" >
+    <q-form class="feedback__form" @submit.prevent="onSubmit" ref="feedbackForm" >
         <q-input 
+        class="feedback__input"
         outlined 
         bg-color="primary" 
         v-model="name" 
@@ -8,22 +9,26 @@
         :rules="[(val) => !!val || 'Обязательное поле']">
       </q-input>
         <q-input 
+        class="feedback__input"
         outlined 
         bg-color="primary"
         v-model="phone" 
         label="Телефон" 
         :rules="[(val) => !!val || 'Обязательное поле', isValidPhone()]"></q-input>
         <q-input 
+        class="feedback__input"
         outlined 
         bg-color="primary"
         v-model="email" 
         label="E-mail" 
         :rules="[(val) => !!val || 'Обязательное поле', isValidEmail()]"
         ></q-input>
-        <q-btn   
+        <q-btn  
+        class="feedback__btn" 
+        no-caps
           text-color="primary"
           type="submit"
-          size="md"
+          
           label="Оформить заявку"
           color="secondary" 
         />

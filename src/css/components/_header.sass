@@ -40,15 +40,21 @@
     border-radius: 5px
     margin-bottom: 400px
     z-index: 1
-    &_sm
-      margin-top: 280px
-      margin-bottom: 40px
   &__img
     width: 783px
     position: absolute
     left: 50%
     bottom: 0px
-    &_sm
+
+      
+@media (max-width: 540px)
+  .main-header
+    &__btn
+      margin-top: 280px
+      margin-bottom: 40px
+      margin-right: auto
+      margin-left: auto
+    &__img
       left:0
       position: absolute
       width: 273px
@@ -57,5 +63,3 @@
       bottom: 60px
       width: 100%
       padding: 24px
-      
-    
