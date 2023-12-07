@@ -22,10 +22,12 @@
     </div>
 
   </SectionBlock>
+  <!-- <DetailsCard v-if="showMore"/> -->
 </template>
 <script setup lang="ts">
 import TeamCard from './TeamCard.vue';
 import SectionBlock from './SectionBlock.vue';
+// import DetailsCard from 'src/components/DetailsCard.vue';
 import { onMounted, ref } from 'vue';
 import { Teacher } from '../types/index';
 import { api } from 'boot/axios';
@@ -55,6 +57,14 @@ onMounted(async () => {
   isLoading.value = false;
 
 });
+
+// var showMore=0
+// var teacherDetails
+
+// function showDetails(teammate){
+
+// }
+
 
 // scroll team
 const position = ref(300)

@@ -7,6 +7,8 @@
     <AppTeam/> 
     <AppPackages/>
     <AppFeedback/>
+    <!-- <DetailsCard/> -->
+    
     
   </q-page>
 </template>
@@ -19,4 +21,5 @@ import AppTeam from 'src/components/AppTeam.vue';
 import AppPackages from 'src/components/AppPackages.vue';
 import AppInfo from 'src/components/AppInfo.vue';
 import AppResult from 'src/components/AppResult.vue';
+// import DetailsCard from 'src/components/DetailsCard.vue';
 </script>
