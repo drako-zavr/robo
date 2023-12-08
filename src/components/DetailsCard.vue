@@ -5,7 +5,7 @@
 
             <q-card-section class="details-card__content col">
                 <div class="row">
-                    <a class="details-card__btn ">Закрыть</a>
+                    <a class="details-card__close">Закрыть</a>
                     <img class="col details-card__photo">
                     <div class="col">
                         <p class="details-card__title">{{ teammate?.name }}</p>

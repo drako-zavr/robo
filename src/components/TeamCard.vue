@@ -15,18 +15,19 @@
 
             <q-card-section class="details-card__content col">
                 <div class="row">
-                    <a class="details-card__btn ">Закрыть</a>
+                    <a v-close-popup class="details-card__close">Закрыть</a>
                     <img class="col details-card__photo" v-if="teammate?.photo" :src="teammate.photo">
                     <div class="col">
-                        <p class="details-card__title">{{ teammate?.name }}</p>
+                        <p class="details-card__name">{{ teammate?.name }}</p>
                         <p class="details-card__position">{{ teammate?.position }}</p>
                         <div class="row">
-                            <img src="" alt="">
-                            <img src="" alt="">
+                            <img class="details-card__social" src="../assets/images/Instagram.svg" alt="">
+                            <img class="details-card__social" src="../assets/images/Facebook.svg" alt="">
                         </div>
                     </div>
                 </div>
                 <p class="details-card__info">Информация</p>
+                <hr>
                 <p class="details-card__text">{{ teammate?.info }}</p>
             </q-card-section>
 
