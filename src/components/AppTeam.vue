@@ -1,5 +1,5 @@
 <template>
-  <SectionBlock title="Профессиональные тренеры">
+  <SectionBlock id="teachers" title="Профессиональные тренеры">
 
     <q-scroll-area ref="scrollAreaRef" 
     style=" max-width: 100%;" bar-style=null
@@ -8,11 +8,11 @@
     >
 
       <div class="row no-wrap">
-        <div class="col" style="width: 380px;"></div>
+        <div class="col" style="width: 10vw;"></div>
         <div v-for="teammate in teammatesList" :key="teammate.id">
           <TeamCard v-if="teammate.display" :teammate="teammate" class="col" />
         </div>
-        <div class="col" style="width: 380px;"></div>
+        <div class="col" style="width: 10vw;"></div>
       </div>
 
     </q-scroll-area>

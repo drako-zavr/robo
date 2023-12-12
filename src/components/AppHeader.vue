@@ -1,7 +1,7 @@
 <template>
     <SectionBlock bgClass="bg-secondary">
         <div class="main-header ">
-            <img src="../assets/images/girl.png" alt="" class="main-header__img" :class="$q.screen.gt.sm ? '' : 'main-header__img_sm'">
+            <img src="../assets/images/girl.png" alt="" class="main-header__img">
             <div class="q-container">
                 <div class="row">
                     <!-- <div class="col-12"></div> -->

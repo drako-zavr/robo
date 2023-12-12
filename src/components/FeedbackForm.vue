@@ -23,7 +23,7 @@
         label="E-mail" 
         :rules="[(val) => !!val || 'Обязательное поле', isValidEmail()]"
         ></q-input>
-        <q-btn  
+        <div class="feedback__btn"><q-btn  
         class="feedback__btn" 
         no-caps
           text-color="primary"
@@ -31,7 +31,8 @@
           
           label="Оформить заявку"
           color="secondary" 
-        />
+        /></div>
+        
     </q-form>
 </template>
 
