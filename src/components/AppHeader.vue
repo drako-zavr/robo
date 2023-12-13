@@ -11,7 +11,7 @@
                     <div class="main-header__text col-12" :class="$q.screen.gt.sm ? '' : 'main-header__text_sm text-center'">
                         Курсы повышения квалификации по робототехнике <br>для педагогов начальной школы
                     </div>
-                    <a href="#" class="main-header__btn" :class="$q.screen.gt.sm ? '' : 'main-header__btn_sm'">Записаться на курс</a>
+                    <a href="#price" class="main-header__btn" :class="$q.screen.gt.sm ? '' : 'main-header__btn_sm'">Записаться на курс</a>
                 </div>
             </div>
             
