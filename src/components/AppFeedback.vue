@@ -8,9 +8,9 @@
           <p class="feedback__title">Запишитесь на курс <br>со скидкой 10%</p>
           <p class="feedback__text"> Акция действительна до 10 марта 2022 года</p>
         </div>
-        <div class= "col-6-md col-6-lg col-12-sm" >
+        
           <FeedbackForm />
-        </div>
+        
         
         
       </div>
