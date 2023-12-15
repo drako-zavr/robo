@@ -1,5 +1,5 @@
 <template>
-  <q-card class="team-card flex column justify-start q-pa-md col">
+  <q-card class="team-card flex column justify-start q-pa-md">
 
     <q-img class="team-card__img" v-if="teammate?.photo" :src="teammate.photo"
       :height="`${$q.screen.lt.sm ? '306' : '500'}px`" :width="`${$q.screen.lt.sm ? '220' : '360'}px`" />

@@ -1,5 +1,5 @@
 <template>
-    <q-form class="feedback__form" @submit.prevent="onSubmit" ref="feedbackForm" >
+    <q-form class="feedback__form" @submit="onSubmit" ref="feedbackForm" >
         <q-input 
         class="feedback__input"
         outlined 

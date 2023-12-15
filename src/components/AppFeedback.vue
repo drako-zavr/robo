@@ -2,7 +2,7 @@
     <SectionBlock
     bgClass="feedback-section"
     >
-        <div class="feedback q-container ">
+        <div id="feedback" class="feedback q-container">
       <div class="feedback__row row">
         <div class="feedback__desc col-6-md col-6-lg col-12-sm  text-white">
           <p class="feedback__title">Запишитесь на курс <br>со скидкой 10%</p>

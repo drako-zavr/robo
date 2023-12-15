@@ -56,9 +56,30 @@ hr
     border: none
     margin-bottom: 20px
 
+@media (max-width: 800px)
+    .details-card
+        width: 80%
+        height: 750px
+        &__close
+            display: none
+        &__cross
+            position: absolute
+            width: 13px
+            height: 13px
+            right: 10px
+            cursor: pointer
+            display: block
+        &__position
+            overflow: hidden
+            text-overflow: ellipsis
+        &__text
+            margin-bottom: 100px
+        
+
 @media (max-width: 540px)
     .details-card
         width: 300px
+        height: 489px
         &__close
             display: none
         &__name
@@ -75,13 +96,6 @@ hr
             font-size: 20px
         &__text
             font-size: 14px
-        &__cross
-            position: absolute
-            width: 13px
-            height: 13px
-            right: 10px
-            cursor: pointer
-            display: block
         &__content
             padding: 4px
     .details-hr

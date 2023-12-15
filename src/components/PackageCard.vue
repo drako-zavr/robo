@@ -5,8 +5,7 @@
                     <p class="package-card__title">{{ title }}</p>
                     <p class="package-card__price">{{ price }}</p>
                     <p class="package-card__details">{{ desc }}</p>
-                    <!-- <q-btn class="package-card__btn bg-accent">Оставить заявку</q-btn> -->
-                    <a name="isactive" class="package-card__btn " @click="changeBg" >Оставить заявку</a>
+                    <a name="isactive" class="package-card__btn " href="#feedback" >Оставить заявку</a>
         </q-card-section>
 
     </q-card>
@@ -19,9 +18,5 @@ defineProps({
     price: String,
    
   });
-var backClass='a'
-function changeBg(){
-    console.log(backClass)
-    backClass ='package-card-active'
-}
+
 </script>

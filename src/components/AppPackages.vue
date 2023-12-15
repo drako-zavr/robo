@@ -23,8 +23,4 @@
 <script setup lang="ts">
 import PackageCard from './PackageCard.vue';
 import SectionBlock from './SectionBlock.vue';
-
-// PackageCard.backClass="package-card-active" 
-// console.log(PackageCard.backClass)
-
 </script>
