@@ -12,7 +12,7 @@
         </q-toolbar>
 
         <q-dialog v-model="dialog" class="modal">
-            <img src="../assets/images/close1.png"  class="modal__btn" alt="" @click="dialog = false">
+            <img src="../assets/images/close.png"  class="modal__btn" alt="" @click="dialog = false">
             <div class="col">
             <h4 class="modal__link" href="#school" @click="dialog = false">О школе</h4>
             <h4 class="modal__link" href="#teachers" @click="dialog = false">Тренеры</h4>

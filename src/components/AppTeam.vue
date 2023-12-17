@@ -58,12 +58,6 @@ onMounted(async () => {
 
 });
 
-// var showMore=0
-// var teacherDetails
-
-// function showDetails(teammate){
-
-// }
 
 
 // scroll team

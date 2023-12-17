@@ -16,7 +16,7 @@
             <q-card-section class="details-card__content col">
                 <div class="row">
                     <a v-close-popup class="details-card__close">Закрыть</a>
-                    <img v-close-popup src="../assets/images/close.svg" class="details-card__cross">
+                    <img v-close-popup src="../assets/images/close_modal.svg" class="details-card__cross">
                     <img class="col details-card__photo" v-if="teammate?.photo" :src="teammate.photo">
                     <div class="col">
                         <p class="details-card__name">{{ teammate?.name }}</p>

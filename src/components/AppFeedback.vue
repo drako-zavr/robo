@@ -8,24 +8,10 @@
           <p class="feedback__title">Запишитесь на курс <br>со скидкой 10%</p>
           <p class="feedback__text"> Акция действительна до 10 марта 2022 года</p>
         </div>
-        
           <FeedbackForm />
-        
-        
-        
       </div>
-      
     </div>
     <div class="row w-100">
-            <!-- <img class="col percent"
-    height="120"
-    src="~images/percent2.png"
-  /> -->
-  <!-- <img class="col percent"
-    height="120"
-    src="~images/percent1.svg"
-  /> -->
-  
         </div>
     </SectionBlock>
 
