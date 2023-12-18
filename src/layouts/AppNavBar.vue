@@ -7,7 +7,7 @@
             <a id="nav3" class="navbar__link" href="#price"> Стоимость </a>
             <q-toolbar-title id="nav4"  class="navbar__phone"> +7 800 000 11 22 </q-toolbar-title>
             
-            <img src="../assets/images/phone.png"  class="navbar__menu-btn" alt="" @click="dialog = true">
+            <img src="../assets/images/phone.png"  class="navbar__menu-btn" alt="" @click="dialog_phone = true">
             <img src="../assets/images/menu.png"  class="navbar__menu-btn" alt="" @click="dialog = true">
         </q-toolbar>
 
@@ -19,10 +19,17 @@
             <h4 class="modal__link" href="#price" @click="dialog = false">Стоимость</h4>
         </div>
         </q-dialog>
+        <q-dialog v-model="dialog_phone" class="modal">
+            <img src="../assets/images/close.png"  class="modal__btn" alt="" @click="dialog_phone = false">
+            <div class="col">
+            <h4 class="modal__link" href="#school" @click="dialog_phone = false">+7 800 000 11 22</h4>
+        </div>
+        </q-dialog>
     </q-header>
 </template>
 <script setup lang="ts">
 import { ref } from 'vue';
 
 var dialog = ref(false)
+var dialog_phone = ref(false)
 </script>

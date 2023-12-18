@@ -1,7 +1,5 @@
 <template>
-    <SectionBlock 
-
-    >
+    <SectionBlock>
         <div id="school" class="q-container info">
 
             <div class="row">
