@@ -14,8 +14,12 @@
                         по робототехнике и программированию</p>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12 result__col">
-                    <p class="result__title">Практику <img src="../assets/images/tooltip_i.svg" alt=""
-                            class="tooltip-img"><span class="tooltip">При наличии свободных мест</span></p>
+                    <div class="result_practice row">
+                        <p class="result__title">Практику <span class="tooltip">При наличии свободных мест</span>
+                        <img src="../assets/images/tooltip_i.svg" alt=""
+                            class="tooltip-img"></p>
+                    </div>
+                    
 
                     <p class="result__text">Возможность пройти практику по преподаванию робототехники на базе R:ED LAB (в
                         оффлайн или онлайн формате)</p>
