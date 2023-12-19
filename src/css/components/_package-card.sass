@@ -6,6 +6,7 @@
     box-shadow: none
     border-radius: 20px
     border: 1px solid rgba(20, 16, 36, 0.20)
+    transition: 0.3s
     &__content
         padding: 0px
     &__title
@@ -48,6 +49,10 @@
         cursor: pointer
    
 .package-card-active
+    background-color: $secondary
+    color: #fff !important
+
+.package-card:hover
     background-color: $secondary
     color: #fff !important
 

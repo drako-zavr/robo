@@ -7,7 +7,6 @@
                     title="– PRO –" 
                     price="20.000 ₽" 
                     desc="УМК по робототетхнике и программированию"
-                    bgClass="package-card-active" 
                    />
                 </div>
                 <div class="col-4-lg col-4-md col-12-sm centered">

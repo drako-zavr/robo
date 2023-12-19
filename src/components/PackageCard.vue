@@ -7,7 +7,7 @@
                     <p class="package-card__details">{{ desc }}</p>
                     <a name="isactive" class="package-card__btn " href="#feedback" >Оставить заявку</a>
         </q-card-section>
-
+ 
     </q-card>
 </template>
 <script setup lang="ts">
