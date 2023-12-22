@@ -13,8 +13,8 @@
     </div>
 
     <!-- Без этого div внизу почему-то появляется белая полоса -->
-    <div class="row w-100">
-    </div>
+    <!-- <div class="row w-100">
+    </div> -->
 
   </SectionBlock>
 </template>

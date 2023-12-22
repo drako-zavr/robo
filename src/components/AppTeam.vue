@@ -1,8 +1,8 @@
 <template>
   <SectionBlock id="teachers" title="Профессиональные тренеры">
 
-    <q-scroll-area ref="scrollAreaRef" 
-    style=" max-width: 100%;" bar-style=null
+    <q-scroll-area class="team-scroll" ref="scrollAreaRef" 
+    bar-style=null
     :height="`${$q.screen.lt.sm ? '500' : '700'}px`"
     :style="`${$q.screen.lt.sm ? 'height: 500' : 'height: 700'}px`"
     >
