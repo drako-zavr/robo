@@ -1,8 +1,8 @@
 from django.urls import path
-from .views import TeacherRetriveAPIView
+from .views import TeacherInfoAPIView
 
 app_name = "team"
 
 urlpatterns = [
-    path("list/", TeacherRetriveAPIView.as_view(), name="team"),
+    path("list/", TeacherInfoAPIView.as_view(), name="team"),
 ]

@@ -1,5 +1,5 @@
 import { api } from 'boot/axios';
-import { Teacher } from '../types/index';
+import { Teacher } from '../models/teacher';
 
 export function useTeam() {
     const fetchTeam = async () => {

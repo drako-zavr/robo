@@ -6,14 +6,13 @@ class Teacher(models.Model):
     Модель преподавателя
     """
 
-    order = models.PositiveIntegerField(_("Порядок вывода"), null=True, blank=True)
-    name = models.CharField(_("Имя"), max_length=255, null=True, blank=False)
-    photo = models.ImageField(blank=True, null=True, verbose_name=_("Фотография"))
-    position = models.CharField(_("Должность"), max_length=255, null=True, blank=False)
-    social1 = models.CharField(_("Ссылка1"), max_length=255, null=True, blank=False)
-    social2 = models.CharField(_("Ссылка2"), max_length=255, null=True, blank=False)
-    info = models.CharField(_("Информация"), max_length=255, null=True, blank=False)
-    display = models.BooleanField(_("Отображение"), null=True, blank=True)
+    name = models.CharField(_("Имя"), max_length=255, null=True)
+    surname = models.CharField(_("Фамилия"), max_length=255, null=True)
+    photo = models.ImageField(verbose_name=_("Фотография"), blank=True, null=True)
+    position = models.CharField(_("Должность"), max_length=255, null=True)
+    social1 = models.CharField(_("Ссылка1"), max_length=255, null=True)
+    social2 = models.CharField(_("Ссылка2"), max_length=255, null=True)
+    info = models.CharField(_("Информация"), max_length=255, null=True)
 
     def __str__(self):
         return self.name
@@ -21,7 +20,7 @@ class Teacher(models.Model):
     class Meta:
         verbose_name = _("Преподаватель")
         verbose_name_plural = _("Преподаватели")
-        ordering = ["order"]
+        ordering = ["name"]
  
 
     

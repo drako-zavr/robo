@@ -4,6 +4,5 @@ from .views import  FeedbackCreateAPIView
 app_name = "feedback"
 
 urlpatterns = [
-
     path("create/", FeedbackCreateAPIView.as_view()),
 ]

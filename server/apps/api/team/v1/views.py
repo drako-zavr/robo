@@ -2,7 +2,7 @@ from rest_framework import views, generics
 from ..models import Teacher
 from .serializers import TeacherSerializer
 
-class TeacherRetriveAPIView(generics.ListAPIView):
+class TeacherInfoAPIView(generics.ListAPIView):
     """
     Получение преподавателей
     """

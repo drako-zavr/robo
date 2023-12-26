@@ -10,7 +10,7 @@
       <div class="row no-wrap">
         <div class="col" style="width: 10vw;"></div>
         <div v-for="teammate in teammatesList" :key="teammate.id">
-          <TeamCard v-if="teammate.display" :teammate="teammate" class="col" />
+          <TeamCard :teammate="teammate" class="col" />
         </div>
         <div class="col" style="width: 10vw;"></div>
       </div>
@@ -28,8 +28,8 @@
 import TeamCard from './TeamCard.vue';
 import SectionBlock from './SectionBlock.vue';
 import { onMounted, ref } from 'vue';
-import { Teacher } from '../types/index';
-import { useTeam } from '../hooks/useTeam';
+import { Teacher } from '../models/teacher';
+import { useTeam } from '../composables/useTeam';
 
 
 const { fetchTeam } = useTeam();
