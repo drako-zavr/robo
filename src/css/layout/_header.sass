@@ -4,19 +4,16 @@
     &__title
         text-align: left
         font-size: 30px
-        font-style: normal
         font-weight: 700
         line-height: 160%
     &__phone 
         text-align: right
         font-size: 30px
-        font-style: normal
         font-weight: 600
         line-height: 160%
     &__link
         font-size: 20px
         margin-right: 40px
-        font-style: normal
         font-weight: 400
         line-height: 160%
     &__phone-btn
@@ -32,9 +29,7 @@
         color: #FFF
         text-align: center
         font-size: 30px
-        font-style: normal
         font-weight: 600
-        line-height: 160%
         margin-bottom: 20px
     &__btn
         position: absolute
@@ -47,7 +42,9 @@
             font-size: 18px
     
 @media only screen and (max-width: 990px) 
-    #nav1,#nav2,#nav3,#nav4
+    .navbar__link
+        display: none
+    .navbar__phone
         display: none
     .navbar__phone-btn
         display: flex
