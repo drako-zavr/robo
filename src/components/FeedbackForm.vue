@@ -43,10 +43,10 @@ import { ref } from 'vue';
 import { api } from 'boot/axios';
 import { QForm } from 'quasar';
 
-const name = ref(''),
-  email = ref(''),
-  phone = ref('');
-const feedbackForm = ref<QForm>();//?
+const name = ref<string>(''),
+  email = ref<string>(''),
+  phone = ref<string>('');
+const feedbackForm = ref<QForm>();
 
 const isValidEmail = () => {
   const emailPattern =
