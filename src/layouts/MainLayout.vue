@@ -1,5 +1,5 @@
 <template>
-    <q-layout view="lHh Lpr lFf">
+    <q-layout view="lhr lpR lfr"> 
         <AppNavbar/>
         <q-page-container>
             <router-view />
