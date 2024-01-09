@@ -17,8 +17,8 @@
 
     </q-scroll-area>
     <div class="btns row">
-      <q-img class="arrow-btn" src="../assets/images/arrow_left.svg"  @click="scrollLeft"></q-img>
-      <q-img class="arrow-btn" src="../assets/images/arrow_right.svg" @click="scrollRight"></q-img>
+      <q-img class="arrow-btn cursor-pointer" src="../assets/images/arrow_left.svg"  @click="scrollLeft"></q-img>
+      <q-img class="arrow-btn cursor-pointer" src="../assets/images/arrow_right.svg" @click="scrollRight"></q-img>
     </div>
 
   </SectionBlock>

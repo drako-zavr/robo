@@ -4,9 +4,9 @@
     <q-img class="team-card__img" v-if="teammate?.photo" :src="teammate.photo"
       :height="`${$q.screen.lt.sm ? '306' : '500'}px`" :width="`${$q.screen.lt.sm ? '220' : '360'}px`" />
     <div>
-      <p class="team-card__name">{{ teammate?.name }} {{ teammate?.surname }}</p>
+      <p class="team-card__name text-secondary">{{ teammate?.name }} {{ teammate?.surname }}</p>
       <p class="team-card__position text-subtitle1">{{ teammate?.position }}</p>
-      <a class="team-card__details" @click="dialog = true">Подробнее</a>
+      <a class="team-card__details text-accent cursor-pointer" @click="dialog = true">Подробнее</a>
     </div>
 
     <q-dialog v-model="dialog" ref="dialogRef">
@@ -14,19 +14,19 @@
 
         <q-card-section class="details-card__content col">
           <div class="row">
-            <a v-close-popup class="details-card__close">Закрыть</a>
-            <img v-close-popup src="../assets/images/close_modal.svg" class="details-card__cross">
+            <a v-close-popup class="details-card__close cursor-pointer">Закрыть</a>
+            <img v-close-popup src="../assets/images/close_modal.svg" class="details-card__cross cursor-pointer">
             <img class="col details-card__photo" v-if="teammate?.photo" :src="teammate.photo">
             <div class="col">
-              <p class="details-card__name">{{ teammate?.name }} {{ teammate?.surname }}</p>
-              <p class="details-card__position">{{ teammate?.position }}</p>
+              <p class="details-card__name text-secondary">{{ teammate?.name }} {{ teammate?.surname }}</p>
+              <p class="details-card__position ">{{ teammate?.position }}</p>
               <div class="row">
                 <img class="details-card__social" src="../assets/images/Instagram.svg" alt="instagram">
                 <img class="details-card__social" src="../assets/images/Facebook.svg" alt="facebook">
               </div>
             </div>
           </div>
-          <p class="details-card__info">Информация</p>
+          <p class="details-card__info text-accent">Информация</p>
           <hr class="details-hr">
           <p class="details-card__text" v-html="teammate?.info"></p>
         </q-card-section>
