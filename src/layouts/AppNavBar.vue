@@ -14,9 +14,9 @@
         <q-dialog v-model="dialog" class="modal bg-secondary">
             <img src="../assets/images/close.png"  class="modal__btn" @click="dialog = false">
             <div class="col">
-            <p class="modal__link text-primary" href="#school" @click="dialog = false">О школе</p>
-            <p class="modal__link text-primary" href="#teachers" @click="dialog = false">Тренеры</p>
-            <p class="modal__link text-primary" href="#price" @click="dialog = false">Стоимость</p>
+            <p class="modal__link text-primary text-center" href="#school" @click="dialog = false">О школе</p>
+            <p class="modal__link text-primary text-center" href="#teachers" @click="dialog = false">Тренеры</p>
+            <p class="modal__link text-primary text-center" href="#price" @click="dialog = false">Стоимость</p>
         </div>
         </q-dialog>
         <q-dialog v-model="dialog_phone" class="modal">

@@ -3,9 +3,9 @@
 
     <q-scroll-area class="team-scroll" ref="scrollAreaRef" 
     bar-style=null
-    :height="`${$q.screen.lt.sm ? '500' : '700'}px`"
-    :style="`${$q.screen.lt.sm ? 'height: 500' : 'height: 700'}px`"
-    >
+    
+   
+    > 
 
       <div class="row no-wrap">
         <div class="col" style="width: 10vw;"></div>
@@ -16,8 +16,8 @@
       </div>
 
     </q-scroll-area>
-    <div class="btns row">
-      <q-img class="arrow-btn cursor-pointer" src="../assets/images/arrow_left.svg"  @click="scrollLeft"></q-img>
+    <div class="btns row q-mx-auto">
+      <q-img class="arrow-btn cursor-pointer q-mr-sm" src="../assets/images/arrow_left.svg"  @click="scrollLeft"></q-img>
       <q-img class="arrow-btn cursor-pointer" src="../assets/images/arrow_right.svg" @click="scrollRight"></q-img>
     </div>
 
