@@ -4,8 +4,8 @@ export interface Teacher {
     name: string;
     surname: string;
     position: string;
-    social1: string;
-    social2: string;
+    instagram: string;
+    facebook: string;
     info: string;
 
   }
