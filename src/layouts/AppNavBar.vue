@@ -11,15 +11,15 @@
             <img src="../assets/images/menu.png"  class="navbar__menu-btn" @click="dialog = true">
         </q-toolbar>
 
-        <q-dialog v-model="dialog" class="modal bg-secondary">
+        <q-dialog v-model="dialog" class="modal bg-secondary text-center text-primary">
             <img src="../assets/images/close.png"  class="modal__btn" @click="dialog = false">
             <div class="col">
-            <p class="modal__link text-primary text-center" href="#school" @click="dialog = false">О школе</p>
-            <p class="modal__link text-primary text-center" href="#teachers" @click="dialog = false">Тренеры</p>
-            <p class="modal__link text-primary text-center" href="#price" @click="dialog = false">Стоимость</p>
+            <p class="modal__link" href="#school" @click="dialog = false">О школе</p>
+            <p class="modal__link" href="#teachers" @click="dialog = false">Тренеры</p>
+            <p class="modal__link" href="#price" @click="dialog = false">Стоимость</p>
         </div>
         </q-dialog>
-        <q-dialog v-model="dialog_phone" class="modal">
+        <q-dialog v-model="dialog_phone" class="modal bg-secondary text-primary text-center">
             <img src="../assets/images/close.png" class="modal__btn" @click="dialog_phone = false">
             <div class="col">
             <p class="modal__link" href="#school" @click="dialog_phone = false">+7 800 000 11 22</p>

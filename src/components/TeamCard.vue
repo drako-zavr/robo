@@ -11,18 +11,17 @@
 
     <q-dialog v-model="dialog" ref="dialogRef">
       <q-card class="details-card flex column justify-start q-pa-md hide-scrollbar">
-
-        <q-card-section class="details-card__content col q-pa-xs">
+        <q-card-section class="details-card__content col q-pa-md">
           <div class="row">
-            <a v-close-popup class="details-card__close cursor-pointer gt-sm">Закрыть</a>
+            <q-btn flat no-caps v-close-popup class="details-card__close cursor-pointer gt-sm">Закрыть</q-btn>
             <img v-close-popup src="../assets/images/close_modal.svg" class="details-card__cross cursor-pointer lt-md">
             <q-img class="col details-card__photo" v-if="teammate?.photo" :src="teammate.photo"/>
             <div class="col">
               <p class="details-card__name text-secondary q-mb-sm">{{ teammate?.name }} {{ teammate?.surname }}</p>
               <p class="details-card__position q-mb-sm">{{ teammate?.position }}</p>
               <div class="row">
+                <img class="details-card__social cursor-pointer q-mr-sm" src="../assets/images/Facebook.svg" alt="facebook">
                 <img class="details-card__social cursor-pointer" src="../assets/images/Instagram.svg" alt="instagram">
-                <img class="details-card__social cursor-pointer" src="../assets/images/Facebook.svg" alt="facebook">
               </div>
             </div>
           </div>
@@ -30,10 +29,8 @@
           <hr class="details-hr no-border q-mb-lg gt-xs">
           <p class="details-card__text" v-html="teammate?.info"></p>
         </q-card-section>
-
       </q-card>
     </q-dialog>
-
 
   </q-card>
 </template>

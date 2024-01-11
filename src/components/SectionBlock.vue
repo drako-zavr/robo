@@ -5,7 +5,7 @@
         <p v-if="title" class="section-block__title  text-h4 text-secondary">
           {{ title }}
         </p>
-      </div>
+      </div> 
       <slot></slot>
     </div>
 

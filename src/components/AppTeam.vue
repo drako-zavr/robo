@@ -1,12 +1,7 @@
 <template>
   <SectionBlock id="teachers" title="Профессиональные тренеры">
 
-    <q-scroll-area class="team-scroll" ref="scrollAreaRef" 
-    bar-style=null
-    
-   
-    > 
-
+    <q-scroll-area class="team-scroll" ref="scrollAreaRef" bar-style=null> 
       <div class="row no-wrap">
         <div class="col" style="width: 10vw;"></div>
         <div v-for="teammate in teammatesList" :key="teammate.id">
@@ -14,7 +9,6 @@
         </div>
         <div class="col" style="width: 10vw;"></div>
       </div>
-
     </q-scroll-area>
     <div class="btns row q-mx-auto">
       <q-img class="arrow-btn cursor-pointer q-mr-sm" src="../assets/images/arrow_left.svg"  @click="scrollLeft"></q-img>
@@ -22,7 +16,6 @@
     </div>
 
   </SectionBlock>
-
 </template>
 <script setup lang="ts">
 import TeamCard from './TeamCard.vue';
