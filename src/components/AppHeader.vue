@@ -13,7 +13,6 @@
                     <q-btn no-caps href="#price" class="main-header__btn text-weight-regular bg-accent">Записаться на курс</q-btn>
                 </div> 
             </div>
-            
         </div>
     </SectionBlock>
 </template>

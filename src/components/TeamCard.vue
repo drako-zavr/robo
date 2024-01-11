@@ -20,8 +20,8 @@
               <p class="details-card__name text-secondary q-mb-sm">{{ teammate?.name }} {{ teammate?.surname }}</p>
               <p class="details-card__position q-mb-sm">{{ teammate?.position }}</p>
               <div class="row">
-                <img class="details-card__social cursor-pointer q-mr-sm" src="../assets/images/Facebook.svg" alt="facebook">
-                <img class="details-card__social cursor-pointer" src="../assets/images/Instagram.svg" alt="instagram">
+                <q-img class="details-card__social cursor-pointer q-mr-sm" src="../assets/images/Facebook.svg" alt="facebook"/>
+                <q-img class="details-card__social cursor-pointer" src="../assets/images/Instagram.svg" alt="instagram"/>
               </div>
             </div>
           </div>

@@ -1,14 +1,14 @@
 <template>
     <q-header reveal class="navbar bg-secondary">
-        <q-toolbar class="q-px-xl bg-transparent q-pa-md">
+        <q-toolbar class=" bg-transparent q-pa-md">
             <q-toolbar-title class="navbar__title text-left text-weight-bold"> ROBO.SCHOOL </q-toolbar-title>
-            <a class="navbar__link" href="#school"> О школе </a>
-            <a class="navbar__link" href="#teachers"> Тренеры </a>
-            <a class="navbar__link" href="#price"> Стоимость </a>
-            <q-toolbar-title class="navbar__phone text-right"> +7 800 000 11 22 </q-toolbar-title>
+            <a class="navbar__link gt-sm" href="#school"> О школе </a>
+            <a class="navbar__link gt-sm" href="#teachers"> Тренеры </a>
+            <a class="navbar__link gt-sm" href="#price"> Стоимость </a>
+            <q-toolbar-title class="navbar__phone text-right gt-sm"> +7 800 000 11 22 </q-toolbar-title>
             
-            <img src="../assets/images/phone.png"  class="navbar__menu-btn" @click="dialog_phone = true">
-            <img src="../assets/images/menu.png"  class="navbar__menu-btn" @click="dialog = true">
+            <q-img src="../assets/images/phone.png"  class="navbar__menu-btn lt-md" @click="dialog_phone = true"/>
+            <q-img src="../assets/images/menu.png"  class="navbar__menu-btn q-ml-sm lt-md" @click="dialog = true"/>
         </q-toolbar>
 
         <q-dialog v-model="dialog" class="modal bg-secondary text-center text-primary">

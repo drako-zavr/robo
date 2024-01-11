@@ -16,7 +16,7 @@
                 <div class="col-lg-4 col-md-4 col-sm-12 result__col">
                     <div class="result_practice row">
                         <p class="result__title text-secondary text-center">Практику <span class="tooltip">При наличии свободных мест</span>
-                        <img src="../assets/images/tooltip_i.svg" alt=""
+                        <img src="../assets/images/tooltip_i.svg"
                             class="tooltip-img"></p>
                     </div>
                     <p class="result__text text-secondary">Возможность пройти практику по преподаванию робототехники на базе R:ED LAB (в
