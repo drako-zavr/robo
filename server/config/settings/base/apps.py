@@ -30,6 +30,7 @@ PROJECT_APPS = [
     # 
     "apps.api.feedback",
     "apps.api.team",
+    "apps.api.packages",
 
 ]
 
