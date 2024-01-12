@@ -7,4 +7,4 @@ from .models import Package
 @admin.register(Package)
 class PackageAdmin(BaseAdminMixin, admin.ModelAdmin):
     """Админка пакетов"""
-    list_display = ("name","price")
+    list_display = ("id","name","price")

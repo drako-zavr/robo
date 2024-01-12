@@ -16,7 +16,7 @@ class Package(models.Model):
     class Meta:
         verbose_name = _("Пакет")
         verbose_name_plural = _("Пакеты")
-        ordering = ["name"]
+        ordering = ["id"]
  
 
     

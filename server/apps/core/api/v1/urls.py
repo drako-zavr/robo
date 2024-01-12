@@ -7,4 +7,5 @@ urlpatterns = [
     # 
     path("feedback/", include("apps.api.feedback.v1")),
     path("team/", include("apps.api.team.v1")),
+    path("packages/", include("apps.api.packages.v1")),
 ]
