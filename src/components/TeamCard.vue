@@ -1,8 +1,6 @@
 <template>
   <q-card class="team-card flex column justify-start no-box-shadow q-pa-lg">
-
-    <q-img class="team-card__img" v-if="teammate?.photo" :src="teammate.photo"
-      :height="`${$q.screen.lt.sm ? '306' : '500'}px`" :width="`${$q.screen.lt.sm ? '220' : '360'}px`" />
+    <q-img class="team-card__img" v-if="teammate?.photo" :src="teammate.photo"/> 
     <div>
       <p class="team-card__name text-secondary">{{ teammate?.name }} {{ teammate?.surname }}</p>
       <p class="team-card__position text-subtitle1">{{ teammate?.position }}</p>
@@ -37,13 +35,11 @@
 <script setup lang="ts">
 import { Teacher } from '../models/teacher';
 import { PropType, ref } from 'vue';
-import { useQuasar } from 'quasar'
+
 defineProps({
   teammate: Object as PropType<Teacher>
 });
 
-const $q = useQuasar()
 var dialog = ref<boolean>(false)
-
 
 </script>
