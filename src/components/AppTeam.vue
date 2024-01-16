@@ -3,11 +3,11 @@
 
     <q-scroll-area class="team-scroll" ref="scrollAreaRef" bar-style=null> 
       <div class="row no-wrap">
-        <div class="col" style="width: 10vw;"></div>
+        <div class="col q-px-xl"></div>
         <div v-for="teammate in teammatesList" :key="teammate.id">
           <TeamCard :teammate="teammate" class="col" />
         </div>
-        <div class="col" style="width: 10vw;"></div>
+        <div class="col q-px-xl"></div>
       </div>
     </q-scroll-area>
     <div class="btns row q-mx-auto">

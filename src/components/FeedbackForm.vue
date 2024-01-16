@@ -29,11 +29,11 @@
     </q-input>
     <div class="feedback__btn">
       <q-btn 
-      class="feedback__btn" 
+      flat
+      class="feedback__btn bg-secondary" 
       no-caps text-color="primary" 
       type="submit"
-      label="Оформить заявку" 
-      color="secondary" />
+      label="Оформить заявку"/>
     </div>
   </q-form>
 </template>

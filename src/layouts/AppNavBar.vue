@@ -2,28 +2,29 @@
     <q-header reveal class="navbar bg-secondary">
         <q-toolbar class=" bg-transparent q-pa-md">
             <q-toolbar-title class="navbar__title text-left text-weight-bold"> ROBO.SCHOOL </q-toolbar-title>
-            <q-btn flat no-caps class="navbar__link gt-sm" href="#school" to="#school">  О школе </q-btn>
+            <q-btn flat no-caps class="navbar__link gt-sm" href="#school" to="#school"> О школе </q-btn>
             <q-btn flat no-caps class="navbar__link gt-sm" href="#teachers"> Тренеры </q-btn>
             <q-btn flat no-caps class="navbar__link gt-sm" href="#price"> Стоимость </q-btn>
             <q-toolbar-title class="navbar__phone text-right gt-sm"> +7 800 000 11 22 </q-toolbar-title>
-            
-            <q-img src="../assets/images/phone.png"  class="navbar__menu-btn lt-md" @click="dialog_phone = true"/>
-            <q-img src="../assets/images/menu.png"  class="navbar__menu-btn q-ml-sm lt-md" @click="dialog = true"/>
+
+            <q-img src="../assets/images/phone.png" class="navbar__menu-btn lt-md" @click="dialog_phone = true" />
+            <q-img src="../assets/images/menu.png" class="navbar__menu-btn q-ml-sm lt-md" @click="dialog = true" />
         </q-toolbar>
 
         <q-dialog v-model="dialog" class="modal bg-secondary text-center text-primary">
-            <img src="../assets/images/close.png"  class="modal__btn q-pr-xs" @click="dialog = false">
+            <img src="../assets/images/close.png" class="modal__btn q-pr-xs" @click="dialog = false">
             <div class="col">
-            <q-btn flat no-caps class="modal__link col-12 w-100" href="#school" @click="dialog = false">О школе</q-btn>
-            <q-btn flat no-caps class="modal__link col-12 w-100" href="#teachers" @click="dialog = false">Тренеры</q-btn>
-            <q-btn flat no-caps class="modal__link col-12 w-100" href="#price" @click="dialog = false">Стоимость</q-btn>
-        </div>
+                <q-btn flat no-caps class="modal__link col-12 w-100" href="#school" @click="dialog = false">О школе</q-btn>
+                <q-btn flat no-caps class="modal__link col-12 w-100" href="#teachers"
+                    @click="dialog = false">Тренеры</q-btn>
+                <q-btn flat no-caps class="modal__link col-12 w-100" href="#price" @click="dialog = false">Стоимость</q-btn>
+            </div>
         </q-dialog>
         <q-dialog v-model="dialog_phone" class="modal bg-secondary text-primary text-center">
             <img src="../assets/images/close.png" class="modal__btn q-pr-xs" @click="dialog_phone = false">
             <div class="col">
-            <p class="modal__link" href="#school" @click="dialog_phone = false">+7 800 000 11 22</p>
-        </div>
+                <p class="modal__link" href="#school" @click="dialog_phone = false">+7 800 000 11 22</p>
+            </div>
         </q-dialog>
     </q-header>
 </template>
