@@ -37,7 +37,7 @@ onMounted(async () => {
 
 
 // scroll team
-const position = ref(300)
+const position = ref<number>(300)
 const scrollAreaRef = ref(null)
 
 const scrollLeft = () =>  {
@@ -47,7 +47,7 @@ const scrollLeft = () =>  {
 
 const scrollRight = () => {
   position.value += 500
-  scrollAreaRef.value.setScrollPosition('horizontal', position.value,300)
+  scrollAreaRef.value.setScrollPosition('horizontal', position.value, 300)
 }
 
 </script>
