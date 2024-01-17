@@ -3,7 +3,7 @@
         <div id="school" class="q-container info q-px-md">
  
             <div class="row">
-                <div class="col-12 info__description text-secondary">
+                <div class="col-12 info__description text-secondary q-mb-xl">
                     <p><b>Robo School</b> – учреждение для формирования кадрового педагогического резерва в сфере робототехники и программирования</p>
                 </div>
                 <div class="col-md-3 col-12">
