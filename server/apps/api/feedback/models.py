@@ -6,9 +6,9 @@ class Feedback(models.Model):
     Модель заявки на курс
     """
 
-    name = models.CharField(verbose_name=_("Имя"), max_length=70, null=True)
-    phone = models.CharField(verbose_name=_("Телефон"), max_length=11, null=True)
-    email = models.EmailField(verbose_name=_("Email"), max_length=254, null=True)
+    name = models.CharField(verbose_name=_("Имя"), max_length=100)
+    phone = models.CharField(verbose_name=_("Телефон"), max_length=11)
+    email = models.EmailField(verbose_name=_("Email"), max_length=255)
 
     class Meta:
         verbose_name = _("Заявка")
