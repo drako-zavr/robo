@@ -1,10 +1,10 @@
 <template>
   <q-form 
-  class="feedback__form" 
+  class="feedback__form col-6-md col-6-lg col-12-sm " 
   @submit="onSubmit" 
   ref="feedbackForm">
     <q-input 
-    class="feedback__input" 
+    class="feedback__input q-pb-sm" 
     outlined 
     bg-color="primary" 
     v-model="name" 
@@ -12,7 +12,7 @@
       :rules="[(val) => !!val || '']">
     </q-input>
     <q-input 
-    class="feedback__input" 
+    class="feedback__input q-pb-sm" 
     outlined 
     bg-color="primary" 
     v-model="phone" 
@@ -20,7 +20,7 @@
       :rules="[(val) => !!val || '', isValidPhone()]">
     </q-input>
     <q-input 
-    class="feedback__input" 
+    class="feedback__input q-pb-sm" 
     outlined 
     bg-color="primary" 
     v-model="email" 
@@ -30,7 +30,7 @@
     <div class="feedback__btn">
       <q-btn 
       flat
-      class="feedback__btn bg-secondary" 
+      class="feedback__btn bg-secondary q-py-md" 
       no-caps text-color="primary" 
       type="submit"
       label="Оформить заявку"/>

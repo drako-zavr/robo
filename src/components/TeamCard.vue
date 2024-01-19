@@ -13,7 +13,7 @@
           <div class="row">
             <q-btn flat no-caps v-close-popup class="details-card__close cursor-pointer gt-sm absolute-top-right q-mt-sm q-mr-lg">Закрыть</q-btn>
             <img v-close-popup src="../assets/images/close_modal.svg" class="details-card__cross cursor-pointer lt-md absolute-top-right q-mt-sm q-mr-sm">
-            <q-img class="col details-card__photo" v-if="teammate?.photo" :src="teammate.photo"/>
+            <q-img class="col details-card__photo q-mr-xl q-mb-xl" v-if="teammate?.photo" :src="teammate.photo"/>
             <div class="col">
               <p class="details-card__name text-secondary q-mb-sm">{{ teammate?.name }} {{ teammate?.surname }}</p>
               <p class="details-card__position q-mb-sm">{{ teammate?.position }}</p>
@@ -24,7 +24,7 @@
             </div>
           </div>
           <p class="details-card__info text-accent q-mb-md">Информация</p>
-          <hr class="details-hr no-border q-mb-lg gt-xs">
+          <hr class="details-hr no-border q-mb-lg gt-xs ">
           <p class="details-card__text q-mb-xl" v-html="teammate?.info"></p>
         </q-card-section>
       </q-card>
