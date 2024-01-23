@@ -1,5 +1,4 @@
 .package-card
-    margin-bottom: 120px
     border-radius: 20px
     border: 1px solid rgba(20, 16, 36, 0.20) 
     color: $secondary
@@ -7,7 +6,6 @@
     &__title
         // font-size: 30px
         font-weight: 600
-        margin-bottom: 83px
     &__price
         // font-size: 50px 
         font-weight: 600
@@ -24,8 +22,8 @@
 
 @media (max-width: 600px)
     .package-card
-        max-width: 300px
-        margin-bottom: 30px
+        &__title
+            padding-bottom: 0px
         &__details
             font-size: 16px
         &__btn

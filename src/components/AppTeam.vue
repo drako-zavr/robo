@@ -10,7 +10,7 @@
         <div class="col q-px-xl"></div>
       </div>
     </q-scroll-area>
-    <div class="btns row q-mx-auto">
+    <div class="btns row q-mx-auto gt-xs">
       <q-img class="arrow-btn cursor-pointer q-mr-sm" src="../assets/images/arrow_left.svg"  @click="scrollLeft"></q-img>
       <q-img class="arrow-btn cursor-pointer" src="../assets/images/arrow_right.svg" @click="scrollRight"></q-img>
     </div>
