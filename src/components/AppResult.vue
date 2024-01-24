@@ -2,18 +2,18 @@
     <SectionBlock title="Что вы получите после курса" bgClass="bg-dark">
         <div class="q-container result row">
             <div class="col-lg-4 col-md-4 col-sm-12 q-px-md">
-                <p class="result__title text-secondary q-mb-md">Удостоверение</p>
+                <p class="result__title text-secondary q-mb-md text-h5 text-weight-bold">Удостоверение</p>
                 <p class="result__text text-secondary">Дающее право преподавать робототехнику для детей 6-12 лет в образовательных учреждениях</p>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12 q-px-md">
-                <p class="result__title text-secondary q-mb-md">Знания</p>
+                <p class="result__title text-secondary q-mb-md text-h5 text-weight-bold">Знания</p>
                 <p class="result__text text-secondary">По основам разработки учебно-методических комплексов
                     по робототехнике и программированию</p>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12 q-px-md">
-                    <p class="result__title text-secondary q-mb-md relative-position">Практику
+                    <p class="result__title text-secondary q-mb-md relative-position text-h5 text-weight-bold">Практику
                         <q-tooltip
-                            class="tooltip text-weight-regular text-center q-pt-md bg-primary text-secondary shadow-4"
+                            class="tooltip text-weight-regular text-center q-pt-md bg-primary text-secondary shadow-4 text-subtitle1"
                             anchor="top middle" self="bottom middle">
                             При наличии свободных мест
                         </q-tooltip>

@@ -1,24 +1,24 @@
 <template>
     <SectionBlock>
-        <div id="school" class="q-container info q-px-md row">
-                <div class="col-12 info__description text-secondary q-mb-xl">
+        <div id="school" class="q-container info q-px-md row justify-evenly">
+                <div class="col-12 info__description text-secondary q-mb-xl text-h4">
                     <p><b>Robo School</b> – учреждение для формирования кадрового педагогического резерва в сфере робототехники и программирования</p>
                 </div>
                 <div class="col-md-3 col-12">
-                    <p class="info__number text-accent">10</p>
-                    <p class="info__text">УМК по различным направлениям по робототехнике</p>
+                    <p class="info__number text-accent text-h2">10</p>
+                    <p class="info__text text-body1 q-mt-sm q-pr-xl">УМК по различным направлениям по робототехнике</p>
                 </div>
                 <div class="col-md-3 col-12">
-                    <p class="info__number text-accent">20</p>
-                    <p class="info__text">Школ, в которых запущена робототехника</p>
+                    <p class="info__number text-accent text-h2">20</p>
+                    <p class="info__text text-body1 q-mt-sm q-pr-xl">Школ, в которых запущена робототехника</p>
                 </div>
                 <div class="col-md-3 col-12">
-                    <p class="info__number text-accent">100</p>
-                    <p class="info__text">Педагогов прошедших курсы повышения квалификации</p>
+                    <p class="info__number text-accent text-h2">100</p>
+                    <p class="info__text text-body1 q-mt-sm q-pr-xl">Педагогов прошедших курсы повышения квалификации</p>
                 </div>
                 <div class="col-md-3 col-12">
-                    <p class="info__number text-accent">10 000</p>
-                    <p class="info__text">Обученных детей на базе собственных центров</p>
+                    <p class="info__number text-accent text-h2">10 000</p>
+                    <p class="info__text text-body1 q-mt-sm">Обученных детей на базе собственных центров</p>
                 </div>
         </div>
     </SectionBlock>
