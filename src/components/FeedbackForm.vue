@@ -40,8 +40,8 @@
 
 <script setup lang="ts">
 import { ref } from 'vue';
-import { api } from 'boot/axios';
 import { QForm } from 'quasar';
+import { useFeedback } from 'src/composables/useFeedback';
 
 const name = ref<string>(''),
   email = ref<string>(''),
@@ -64,16 +64,10 @@ const onSubmit = () => {
   void feedbackForm.value?.validate().then(async (success: boolean) => {
     if (success) {
       console.log('success')
-
-      await api
-        .post('/feedback/create/', {
-          name: name.value,
-          email: email.value,
-          phone: phone.value
-        })
-        .catch((e) => {
-          console.error(e);
-        });
+      await useFeedback(name.value,email.value,phone.value);
+      name.value = '';
+      email.value = '';
+      phone.value = '';
     }
   });
 };
