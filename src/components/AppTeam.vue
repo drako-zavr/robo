@@ -24,7 +24,6 @@ import { onMounted, ref } from 'vue';
 import { Teacher } from '../models/teacher';
 import { useTeam } from '../composables/useTeam';
 
-
 const { fetchTeam } = useTeam();
 const teammatesList = ref<Teacher[]>([]);
 const isLoading = ref<boolean>(true);

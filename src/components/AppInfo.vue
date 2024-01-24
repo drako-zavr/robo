@@ -1,8 +1,6 @@
 <template>
     <SectionBlock>
-        <div id="school" class="q-container info q-px-md">
- 
-            <div class="row">
+        <div id="school" class="q-container info q-px-md row">
                 <div class="col-12 info__description text-secondary q-mb-xl">
                     <p><b>Robo School</b> – учреждение для формирования кадрового педагогического резерва в сфере робототехники и программирования</p>
                 </div>
@@ -22,8 +20,6 @@
                     <p class="info__number text-accent">10 000</p>
                     <p class="info__text">Обученных детей на базе собственных центров</p>
                 </div>
-
-            </div>
         </div>
     </SectionBlock>
 </template>

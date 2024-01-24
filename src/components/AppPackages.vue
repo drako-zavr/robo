@@ -1,12 +1,10 @@
 <template>
-    <SectionBlock id="price" title="Выберите нужный пакет">
-        <div class="q-container q-mb-xl">
-            <div class="row q-mb-xl">
-                <div  class="col-4-lg col-4-md col-12-sm q-mx-auto " v-for="pack in packagesList" :key="pack.id">
-          <PackageCard :pack="pack" class="col" />
-        </div>
+    <SectionBlock id="price" title="Выберите нужный пакет" class="q-pb-xl">
+        <div class="q-container q-mb-xl row q-mb-xl">
+            <div class="col-4-lg col-4-md col-12-sm q-mx-auto " v-for="pack in packagesList" :key="pack.id">
+                <PackageCard :pack="pack" class="col" />
             </div>
-        </div> 
+        </div>
     </SectionBlock>
 </template>
 <script setup lang="ts">
@@ -22,8 +20,8 @@ const packagesList = ref<Package[]>([]);
 const isLoading = ref<boolean>(true);
 
 onMounted(async () => {
-  packagesList.value = await fetchPackages();
-  isLoading.value = false;
+    packagesList.value = await fetchPackages();
+    isLoading.value = false;
 
 });
 
