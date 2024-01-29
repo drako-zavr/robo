@@ -24,7 +24,7 @@
             </div>
           </div>
           <p class="text-accent q-mb-md text-weight-regular text-h6">Информация</p>
-          <hr class="details-hr no-border q-mb-lg gt-xs">
+          <q-separator class=" q-mb-lg gt-xs"> ></q-separator>
           <p class="details-card__text q-mb-xl q-mr-xl text-h6 text-weight-regular" v-html="teammate?.info"></p>
         </q-card-section>
       </q-card>
