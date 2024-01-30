@@ -1,6 +1,6 @@
 <template>
     <SectionBlock id="price" title="Выберите нужный пакет" class="q-pb-xl">
-        <div class="q-container q-mb-xl row q-mb-xl">
+        <div class="q-container q-mb-xl row">
             <div class="col-4-lg col-4-md col-12-sm q-mx-auto " v-for="pack in packagesList" :key="pack.id">
                 <PackageCard :pack="pack" class="col" />
             </div>
