@@ -8,19 +8,19 @@
             <div class="row justify-evenly">
                 <div class="col-md-3 col-12">
                     <p class="info__number text-accent text-h2 text-weight-bold">10</p>
-                    <p class="info__text text-body1 q-mt-sm q-pr-xl">УМК по различным направлениям по робототехнике</p>
+                    <p class="info__text text-body1 q-mt-sm q-pr-xl text-info">УМК по различным направлениям по робототехнике</p>
                 </div>
                 <div class="col-md-3 col-12">
                     <p class="info__number text-accent text-h2 text-weight-bold">20</p>
-                    <p class="info__text text-body1 q-mt-sm q-pr-xl">Школ, в которых запущена робототехника</p>
+                    <p class="info__text text-body1 q-mt-sm q-pr-xl text-info">Школ, в которых запущена робототехника</p>
                 </div>
                 <div class="col-md-3 col-12">
                     <p class="info__number text-accent text-h2 text-weight-bold">100</p>
-                    <p class="info__text text-body1 q-mt-sm q-pr-xl">Педагогов прошедших курсы повышения квалификации</p>
+                    <p class="info__text text-body1 q-mt-sm q-pr-xl text-info">Педагогов прошедших курсы повышения квалификации</p>
                 </div>
                 <div class="col-md-3 col-12">
                     <p class="info__number text-accent text-h2 text-weight-bold">10 000</p>
-                    <p class="info__text text-body1 q-mt-sm ">Обученных детей на базе собственных центров</p>
+                    <p class="info__text text-body1 q-mt-sm text-info">Обученных детей на базе собственных центров</p>
                 </div>
             </div>
         </div>
