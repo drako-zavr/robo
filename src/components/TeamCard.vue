@@ -16,7 +16,7 @@
             <q-img class="col details-card__photo q-mr-xl q-mb-xl" v-if="teammate?.photo" :src="teammate.photo"/>
             <div class="col">
               <p class="details-card__name text-secondary q-mb-sm text-h5 text-weight-medium">{{ teammate?.name }} {{ teammate?.surname }}</p>
-              <p class="details-card__position q-mb-sm text-subtitle1">{{ teammate?.position }}</p>
+              <p class="details-card__position q-mb-sm text-subtitle1 text-info">{{ teammate?.position }}</p>
               <div class="row">
                 <q-img class="details-card__social cursor-pointer q-mr-sm" src="../assets/images/Facebook.svg" alt="facebook"/>
                 <q-img class="details-card__social cursor-pointer" src="../assets/images/Instagram.svg" alt="instagram"/>
