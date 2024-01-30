@@ -3,7 +3,7 @@
     <q-img class="team-card__img" v-if="teammate?.photo" :src="teammate.photo"/> 
     <div>
       <p class="team-card__name text-secondary text-h5 text-weight-medium">{{ teammate?.name }} {{ teammate?.surname }}</p>
-      <p class="team-card__position text-subtitle1 q-mb-lg">{{ teammate?.position }}</p>
+      <p class="team-card__position text-subtitle1 q-mb-lg text-info">{{ teammate?.position }}</p>
       <a class="team-card__details text-accent cursor-pointer text-subtitle1" @click="dialog = true">Подробнее</a>
     </div>
 
@@ -12,7 +12,7 @@
         <q-card-section class="details-card__content col q-pa-md q-mb-xl">
           <img v-close-popup src="../assets/images/close_modal.svg" class="cursor-pointer lt-md absolute-top-right q-mt-sm q-mr-sm">
           <div class="row">
-            <q-btn flat no-caps v-close-popup class="details-card__close cursor-pointer gt-sm absolute-top-right q-mt-sm q-mr-lg">Закрыть</q-btn>
+            <q-btn flat no-caps v-close-popup class="details-card__close cursor-pointer gt-sm absolute-top-right q-mt-sm q-mr-lg text-info">Закрыть</q-btn>
             <q-img class="col details-card__photo q-mr-xl q-mb-xl" v-if="teammate?.photo" :src="teammate.photo"/>
             <div class="col">
               <p class="details-card__name text-secondary q-mb-sm text-h5 text-weight-medium">{{ teammate?.name }} {{ teammate?.surname }}</p>
