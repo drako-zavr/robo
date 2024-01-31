@@ -1,6 +1,6 @@
 <template>
-    <q-header reveal class="navbar bg-secondary q-px-xl">
-        <q-toolbar class=" bg-transparent q-pa-md">
+    <q-header  class="navbar bg-secondary q-px-xl">
+        <q-toolbar class="bg-transparent q-pa-md">
             <q-toolbar-title class="navbar__title text-left text-weight-bold "> ROBO.SCHOOL </q-toolbar-title>
             <q-btn flat no-caps class="navbar__link gt-sm q-mr-xl" href="#school"> О школе </q-btn>
             <q-btn flat no-caps class="navbar__link gt-sm q-mr-xl" href="#teachers"> Тренеры </q-btn>
